@@ -1,0 +1,1 @@
+C:\Users\Wini\Documents\base_vanilla\artifacts\FXServer.exe +exec server.cfg

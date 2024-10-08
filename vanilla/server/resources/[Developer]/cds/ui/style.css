@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  position: relative;
+}
+
+.container-coords {
+  width: auto;
+  height: 35px;
+  padding: 6px 15px;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3a3a3a;
+  border-radius: 8px;
+  min-width: 38%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.container-coords:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.container-coords p {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  padding-left: 8px;
+}
+
+.container-coords button {
+  cursor: pointer;
+  color: white;
+  font-size: 0.75rem;
+  font-family: 'Inter', sans-serif;
+  border-radius: 6px;
+  border: none;
+  width: 20%;
+  height: 100%;
+  background-color: #cd5a5a;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.container-coords button:hover {
+  background-color: #b34545;
+  transform: scale(1.05);
+}
+
+.container-coords button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #cd5a5a;
+}
+
+.container-coords a {
+  font-size: .8rem;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  background-color: #4caf50;
+  padding: 8px 15px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  margin-bottom: 10px;
+}
+
